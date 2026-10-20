@@ -14,7 +14,9 @@ A community firmware package for the **Unihertz / 8849 TANK 2**, based on **TANK
 | Red provisioning overlay | Removed, confirmed on the test handset |
 | Verified Boot | Device reported `green` and `locked` after reboot |
 | Offline AVB verification | Complete signature, hash and hash-tree chain passed |
-| Cellular calls and mobile data | Not tested as part of this release |
+| Original IMEI restoration | Both original handset IMEIs restored with the built-in tool and matched after reboot |
+| Cellular calls | Working, confirmed by the handset owner on 2026-10-20 |
+| Mobile data | Not separately confirmed |
 
 SP Flash Tool v6 was the only tool that accepted this package in the maintainer's testing. Other flashing tools, SP Flash Tool versions, operating systems and hardware revisions have not been validated. This package is for **TANK 2**, not TANK 2 Pro or another Tank model.
 
@@ -61,6 +63,32 @@ Back up your data and any device-specific NVRAM/NVDATA or calibration backups be
 6. Wait for the tool's successful completion before disconnecting. Start the phone and allow time for the first boot.
 
 **Do not select Format All + Download or Firmware Upgrade for these instructions.** Formatting can erase device-specific identities, calibration and provisioning that this generic firmware package cannot recreate. Do not relock or change bootloader settings as an installation step.
+
+## Restore your original IMEIs after formatting
+
+The test handset's two original IMEIs were restored using the preinstalled **IMEI Tool** (`com.agui.app.imei`). Both modem writes returned `OK`, and the tool read back the exact original values after a full reboot. The owner subsequently confirmed that **calls work**.
+
+1. Obtain **your own handset's original IMEI1 and IMEI2** from its box or original label. Keep the SIM-slot order. No example or personal IMEI is supplied in this project.
+2. On the booted phone, enable **Developer options → USB debugging**, connect it to a computer with ADB installed, and approve that computer's debugging prompt.
+3. Open the manufacturer's installed tool:
+
+   ```sh
+   adb shell am start -n com.agui.app.imei/.IMEIActivity
+   ```
+
+4. Select **15 digits**. Enter the complete original IMEI1 under **SIM1** and the original IMEI2 under **SIM2**, including their final check digits. Check both values carefully, then press each field's **SAVE** button. Leave MEID unchanged; this procedure restores only the two original IMEIs.
+5. Reboot the phone:
+
+   ```sh
+   adb reboot
+   ```
+
+6. After Android starts, open the tool again with the same command. Its newly populated fields must match both original label values. Do not treat a save notification alone as proof of success.
+7. Insert a working SIM and test calling. Calling now works on the test handset, according to the owner's follow-up report; mobile data has not been separately confirmed.
+
+The stock app writes the modem's identity records through its privileged Phone/RIL interface. **No IMEI was hardcoded into this ROM, no Android-property spoof was used, and no startup script reapplies it.** Persistence was demonstrated by fresh readback after reboot. Normal factory-reset retention of these IMEI records has not been separately tested; formatting identity partitions with a flashing tool can erase them again.
+
+See the [detailed restoration and persistence notes](docs/IMEI-RESTORATION.md). Restoring the original identities is separate from removing the overlay and does not recreate factory attestation keys.
 
 ## What changed
 
