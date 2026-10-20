@@ -85,7 +85,8 @@ Other stock images were compared with the original ZIP and match byte for byte. 
 
 ## Provenance
 
-Base archive: `2024110900_g88v89c2k_dfl_tee.zip`  
+Base archive: `2024110900_g88v89c2k_dfl_tee.zip`
+
 Base SHA-256: `385e1b15dd2ea78a0a9c50f49819ad87efa080fb38c167054392ece9c3ddbc35`
 
 The package includes the original download agent, scatter configuration, stock companion images, file checksums and verification reports. It does not bundle the SP Flash Tool program. Manufacturer binaries and other upstream components retain their respective ownership and license terms.

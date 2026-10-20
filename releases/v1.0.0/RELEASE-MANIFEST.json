@@ -1,0 +1,24 @@
+{
+  "release": "v1.0.0",
+  "device": "Unihertz / 8849 TANK 2",
+  "base_build": "TANK2_20241010",
+  "tested_tool": "SP Flash Tool v6 on Windows",
+  "format": "7-Zip split volumes; extract .7z.001 with all parts in the same folder",
+  "archive_expanded_file_count": 47,
+  "archive_expanded_bytes": 6383480165,
+  "package_manifest_sha256": "4f042eb98c1fd857aadb48202ac04b1b94ec465bd0aac4c1a68df055d211efcf",
+  "parts": [
+    {
+      "name": "TANK2_20241010_watermark_removed_v1.0.0.7z.001",
+      "bytes": 1992294400,
+      "sha256": "21779be7357ce81647ee26fbcb6fc9a43351d47bc834928caf6dd7171d5f1593",
+      "download_url": "https://github.com/Elias966/unihertz-tank2-red-text-removed-rom/releases/download/v1.0.0/TANK2_20241010_watermark_removed_v1.0.0.7z.001"
+    },
+    {
+      "name": "TANK2_20241010_watermark_removed_v1.0.0.7z.002",
+      "bytes": 503369929,
+      "sha256": "095313b6261cf1cf8528b08e1ffe5cb55a99bbc942a4d3caec9493adecd3292c",
+      "download_url": "https://github.com/Elias966/unihertz-tank2-red-text-removed-rom/releases/download/v1.0.0/TANK2_20241010_watermark_removed_v1.0.0.7z.002"
+    }
+  ]
+}
