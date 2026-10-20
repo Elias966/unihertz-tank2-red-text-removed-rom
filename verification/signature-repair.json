@@ -1,0 +1,19 @@
+{
+  "root_public_key_exactly_matches_stock": true,
+  "root_public_key_sha1": "cdbb77177f731920bbe0a0f94f84d9038ae0617d",
+  "root_public_key_sha256": "22de3994532196f61c039e90260d78a93a4c57362c7e789be928036e80b77c8c",
+  "original_system_delegated_key_sha1": "fa41159a5d696abdef93176a07d0b0d001263f01",
+  "new_system_delegated_key_sha1": "cdbb77177f731920bbe0a0f94f84d9038ae0617d",
+  "verification_flags": 0,
+  "system_fec_roots_preserved": 2,
+  "new_system_root_digest": "71fbe4d3c084e4469005ef5df7573f770a557d9775ce69919ddac6ad1a3bb7f2",
+  "system_partition_bytes": 1168982016,
+  "offline_full_chain_verified": true,
+  "on_device_boot_verified": false,
+  "modified_files": [
+    "super.img",
+    "vbmeta.img",
+    "vbmeta_system.img"
+  ],
+  "private_test_key_source": "https://android.googlesource.com/platform/external/avb/+/refs/heads/main/test/data/testkey_rsa2048.pem"
+}

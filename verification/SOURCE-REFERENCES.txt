@@ -1,0 +1,9 @@
+Matching public AOSP test key:
+https://android.googlesource.com/platform/external/avb/+/refs/heads/main/test/data/testkey_rsa2048.pem
+
+AVB format and trust chain:
+https://android.googlesource.com/platform/external/avb/+/master/README.md
+
+FEC tool and its runtime library:
+https://android.googlesource.com/kernel/prebuilts/build-tools/+/refs/heads/main/linux-x86/bin/fec
+https://android.googlesource.com/kernel/prebuilts/build-tools/+/refs/heads/main/linux-x86/lib64/libc++.so

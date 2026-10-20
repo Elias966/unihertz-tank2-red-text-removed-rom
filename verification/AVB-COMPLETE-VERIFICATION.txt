@@ -1,0 +1,23 @@
+Verifying image work/signing-build/final-artifact-check/vbmeta.img using embedded public key
+vbmeta: Successfully verified SHA256_RSA2048 vbmeta struct in work/signing-build/final-artifact-check/vbmeta.img
+boot: Successfully verified chain partition descriptor matches expected data
+--
+Verifying image work/signing-build/final-artifact-check/boot.img using embedded public key
+vbmeta: Successfully verified footer and SHA256_RSA2048 vbmeta struct in work/signing-build/final-artifact-check/boot.img
+boot: Successfully verified sha256 hash of work/signing-build/final-artifact-check/boot.img for image of 20946944 bytes
+vbmeta_system: Successfully verified chain partition descriptor matches expected data
+--
+Verifying image work/signing-build/final-artifact-check/vbmeta_system.img using embedded public key
+vbmeta: Successfully verified SHA256_RSA2048 vbmeta struct in work/signing-build/final-artifact-check/vbmeta_system.img
+system: Successfully verified sha256 hashtree of work/signing-build/final-artifact-check/system.img for image of 1150447616 bytes
+vbmeta_vendor: Successfully verified chain partition descriptor matches expected data
+--
+Verifying image work/signing-build/final-artifact-check/vbmeta_vendor.img using embedded public key
+vbmeta: Successfully verified SHA256_RSA2048 vbmeta struct in work/signing-build/final-artifact-check/vbmeta_vendor.img
+vendor: Successfully verified sha256 hashtree of work/signing-build/final-artifact-check/vendor.img for image of 1019584512 bytes
+dtbo: Successfully verified sha256 hash of work/signing-build/final-artifact-check/dtbo.img for image of 198608 bytes
+vendor_boot: Successfully verified sha256 hash of work/signing-build/final-artifact-check/vendor_boot.img for image of 27914240 bytes
+odm_dlkm: Successfully verified sha256 hashtree of work/signing-build/final-artifact-check/odm_dlkm.img for image of 262144 bytes
+product: Successfully verified sha256 hashtree of work/signing-build/final-artifact-check/product.img for image of 2771632128 bytes
+system_ext: Successfully verified sha256 hashtree of work/signing-build/final-artifact-check/system_ext.img for image of 1050742784 bytes
+vendor_dlkm: Successfully verified sha256 hashtree of work/signing-build/final-artifact-check/vendor_dlkm.img for image of 33243136 bytes

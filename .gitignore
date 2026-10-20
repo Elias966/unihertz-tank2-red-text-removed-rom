@@ -1,0 +1,8 @@
+# Firmware binaries are distributed through GitHub Releases.
+*.img
+*.bin
+*.7z
+*.7z.*
+*.zip
+*.partial
+__pycache__/

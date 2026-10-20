@@ -1,0 +1,38 @@
+SHA256 OK: APDB_MT6789___W2409
+SHA256 OK: APDB_MT6789___W2409_ENUM
+SHA256 OK: DbgInfo_LR13.R2.MP_AGOLD_TK_MD_5M_G86_MOLY_LR13_R2_MP_V106_6_P3_2023-11-28-10_2023_11_28_10_52_1_ulwctg_n
+SHA256 OK: MDDB.META.ODB_MT6789_S00_MOLY_LR13_R2_MP_V106_6_P3_2023-11-28-10_1_ulwctg_n.XML.GZ
+SHA256 OK: MDDB.META_MT6789_S00_MOLY_LR13_R2_MP_V106_6_P3_2023-11-28-10_1_ulwctg_n.EDB
+SHA256 OK: MDDB_InfoCustomAppSrcP_MT6789_S00_MOLY_LR13_R2_MP_V106_6_P3_2023-11-28-10_1_ulwctg_n.EDB
+SHA256 OK: MT6789_Android_scatter.txt
+SHA256 OK: MT6789_Android_scatter.xml
+SHA256 OK: README-FIRST.txt
+SHA256 OK: boot.img
+SHA256 OK: download_agent/DA_BR.bin
+SHA256 OK: download_agent/flash.xml
+SHA256 OK: download_agent/flash.xsd
+SHA256 OK: dpm.img
+SHA256 OK: dtbo.img
+SHA256 OK: gz.img
+SHA256 OK: lk.img
+SHA256 OK: logo.bin
+SHA256 OK: mcupm.img
+SHA256 OK: md1img.img
+SHA256 OK: pi_img.img
+SHA256 OK: preloader_g88v89c2k_dfl_teeu.bin
+SHA256 OK: scp.img
+SHA256 OK: spmfw.img
+SHA256 OK: sspm.img
+SHA256 OK: super.img
+SHA256 OK: tee.img
+SHA256 OK: userdata.img
+SHA256 OK: vbmeta.img
+SHA256 OK: vbmeta_system.img
+SHA256 OK: vbmeta_vendor.img
+SHA256 OK: vendor_boot.img
+SHA256 OK: verify_files.py
+AVB signature OK: vbmeta.img
+AVB signature OK: vbmeta_system.img
+AVB signature OK: vbmeta_vendor.img
+PASS: file hashes, signatures and stock root-key match. Full AVB build report is in verification/.
+On-device boot is not established by this offline check.
